@@ -248,6 +248,25 @@
                 alarm();
             }
         }
+        if (m >= 1){
+            $("body").css("background-color", "skyblue"); 
+        }
+
+        if (m < 1){
+            $("body").css("background-color", "yellow"); 
+        }
+
+         if (m < 1 && s <= 30){
+            $("body").css("background-color", "red"); 
+        }
+
+         if (m < 1 && s <= 15 && s % 2 == 0){
+            $("body").css("background-color", "red"); 
+        }
+
+        if (m < 1 && s <= 15 && s % 2 == 1){
+            $("body").css("background-color", "gray"); 
+        }
         
     } 
 
@@ -266,7 +285,7 @@
     <button id="btnC">Set</button>
     <button id="btnD">5</button>
     <button id="btnE">10</button>  
-    <input type="number" id="minute" value=0 >
-    <input type="number" id="second" value=15 >
+    <input type="number" id="minute" value=3 >
+    <input type="number" id="second" value=0 >
 </body>
 </html>
